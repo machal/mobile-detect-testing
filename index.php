@@ -11,8 +11,8 @@ $is_tablet = ($detect->isTablet() && $is_ios_android);
 // iOS/Android smartphone
 $is_smartphone = ($detect->isMobile() && !$detect->isTablet() && $is_ios_android);
 
-// Krapophone
-$is_dumphone = ($detect->isMobile() && !$detect->isTablet() && !$is_ios_android);
+// Krapo-phone
+$is_dumbphone = ($detect->isMobile() && !$detect->isTablet() && !$is_ios_android);
 
 // Desktop
 $is_desktop = (!$is_tablet && !$is_smartphone && !$is_dumbphone);
@@ -43,7 +43,7 @@ $is_desktop = (!$is_tablet && !$is_smartphone && !$is_dumbphone);
     
     .bar {
       list-style-type: none;
-      color: #999;
+      color: #ccc;
       margin: 0;
       padding: .5em;
       text-align: center;
@@ -65,7 +65,7 @@ $is_desktop = (!$is_tablet && !$is_smartphone && !$is_dumbphone);
     <div class="container">
 
       <p>
-        <b>Servírovali bychom tuto verzi:</b>
+        <b>Detekujeme tuto vrstvu:</b>
       </p>
 
         <ul class="bars">          
